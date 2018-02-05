@@ -1,4 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { DataTableComponent } from '../components/datatable/datatable.component';
+
 
 @Component({
     selector: 'projects',

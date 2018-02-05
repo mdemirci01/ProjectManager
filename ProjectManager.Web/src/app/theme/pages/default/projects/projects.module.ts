@@ -4,11 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { LayoutModule } from '../../../layouts/layout.module';
 import { DefaultComponent } from '../default.component';
 import { ProjectsComponent } from './projects.component';
+import { DataTableComponent } from '../components/datatable/datatable.component';
 
 const routes: Routes = [
     {
         'path': '',
-        'component': DefaultComponent,
+        'component': DataTableComponent,
         'children': [
             {
                 'path': '',
@@ -20,11 +21,12 @@ const routes: Routes = [
 
 @NgModule({
     imports: [
-        CommonModule, RouterModule.forChild(routes), LayoutModule,
+       CommonModule, RouterModule.forChild(routes), LayoutModule,
     ], exports: [
         RouterModule,
     ], declarations: [
         ProjectsComponent,
+        DefaultComponent
     ],
 })
 export class ProjectsModule {
