@@ -23,7 +23,7 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 theme_component_1.ThemeComponent,
-                app_component_1.AppComponent,
+                app_component_1.AppComponent
             ],
             imports: [
                 layout_module_1.LayoutModule,
