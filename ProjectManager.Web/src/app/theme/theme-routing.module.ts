@@ -14,6 +14,10 @@ const routes: Routes = [
                 'loadChildren': '.\/pages\/default\/blank\/blank.module#BlankModule',
             },
             {
+                'path': 'projeler',
+                'loadChildren': '.\/pages\/default\/projects\/projects.module#ProjectsModule',
+            },
+            {
                 'path': '',
                 'redirectTo': 'index',
                 'pathMatch': 'full',
