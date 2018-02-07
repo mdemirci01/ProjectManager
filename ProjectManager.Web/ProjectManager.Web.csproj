@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="src\app\theme\pages\default\components\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
