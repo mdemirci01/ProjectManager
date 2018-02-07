@@ -10,25 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var script_loader_service_1 = require("../../../../_services/script-loader.service");
-var ProjectsComponent = /** @class */ (function () {
-    function ProjectsComponent(_script) {
-        this._script = _script;
+var ProjeFormuComponent = /** @class */ (function () {
+    function ProjeFormuComponent() {
     }
-    ProjectsComponent.prototype.ngOnInit = function () {
+    ProjeFormuComponent.prototype.ngOnInit = function () {
     };
-    ProjectsComponent.prototype.ngAfterViewInit = function () {
-        this._script.loadScripts('projects', ['assets/demo/default/custom/components/datatables/base/projects-ajax.js']);
-    };
-    ProjectsComponent = __decorate([
+    ProjeFormuComponent = __decorate([
         core_1.Component({
-            selector: "projects",
-            templateUrl: "./projects.component.html",
+            selector: "proje-formu",
+            templateUrl: "./proje-formu.component.html",
             encapsulation: core_1.ViewEncapsulation.None,
         }),
-        __metadata("design:paramtypes", [script_loader_service_1.ScriptLoaderService])
-    ], ProjectsComponent);
-    return ProjectsComponent;
+        __metadata("design:paramtypes", [])
+    ], ProjeFormuComponent);
+    return ProjeFormuComponent;
 }());
-exports.ProjectsComponent = ProjectsComponent;
-//# sourceMappingURL=projects.component.js.map
+exports.ProjeFormuComponent = ProjeFormuComponent;
+//# sourceMappingURL=proje-formu.component.js.map

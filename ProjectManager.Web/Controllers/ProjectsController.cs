@@ -6,23 +6,28 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ProjectManager.Data;
 using ProjectManager.Service;
+using ProjectManager.Web.Models;
 
 namespace ProjectManager.Web.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Project")]
-    public class ProjectController : Controller
+    [Route("api/Projects")]
+    public class ProjectsController : Controller
     {
         private readonly IProjectService projectService;
-        public ProjectController(IProjectService projectService)
+        public ProjectsController(IProjectService projectService)
         {
             this.projectService = projectService;
         }
         // GET: api/Project
         [HttpGet]
-        public IEnumerable<Project> Get()
+        public ProjectsDataTable Get()
         {
-            return projectService.GetProjects();
+            var projects = projectService.GetProjects();
+            var projectsDt = new ProjectsDataTable();
+            projectsDt.Data = projects;
+            projectsDt.Meta.Total = projects.Count();
+            return projectsDt;
         }
 
         // GET: api/Project/5

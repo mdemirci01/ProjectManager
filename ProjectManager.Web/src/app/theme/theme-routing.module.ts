@@ -18,6 +18,10 @@ const routes: Routes = [
                 'loadChildren': '.\/pages\/default\/projects\/projects.module#ProjectsModule',
             },
             {
+                'path': 'proje-formu',
+                'loadChildren': '.\/pages\/default\/proje-formu\/proje-formu.module#ProjeFormuModule',
+            },
+            {
                 'path': '',
                 'redirectTo': 'index',
                 'pathMatch': 'full',

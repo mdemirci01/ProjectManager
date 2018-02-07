@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     }
     ngAfterViewInit() {
         this._script.loadScripts('projects',
-            ['assets/demo/default/custom/components/datatables/base/data-ajax.js']);
+            ['assets/demo/default/custom/components/datatables/base/projects-ajax.js']);
 
     }
 
